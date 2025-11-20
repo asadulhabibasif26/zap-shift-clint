@@ -7,6 +7,9 @@ import Brands from "../Brands/Brands";
 
 import liveTrack from '../../../assets/live-tracking.png'
 import safeDelivery from '../../../assets/safe-delivery.png'
+import Reviews from "../Reviews/Reviews";
+
+const reviewsProimse = fetch('/reviews.json').then(res => res.json());
 
 const Home = () => {
   return (
@@ -124,6 +127,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Reviews reviewsProimse={reviewsProimse}></Reviews>
     </div>
   );
 };
