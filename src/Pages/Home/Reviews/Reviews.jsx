@@ -5,7 +5,7 @@ import ReviewCard from "./ReviewCard";
 
 const Reviews = ({ reviewsProimse }) => {
   const reviews = use(reviewsProimse);
-  console.log(reviews);
+
   return (
     <div className="my-24">
       <div className="text-center">
